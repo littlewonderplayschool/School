@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Little Wonder Play School</title>
+<style>
+body{font-family:Arial, sans-serif;margin:0;background:#f9fbff;color:#333}
+header{background:linear-gradient(90deg,#ff7a18,#ffb347);color:white;text-align:center;padding:25px}
+.logo{display:flex;justify-content:center;align-items:center;gap:12px}
+.logo svg{width:60px;height:60px}
+nav{background:#ffa94d;padding:12px;text-align:center}
+nav a{margin:0 15px;color:white;text-decoration:none;font-weight:bold;font-size:16px}
+nav a:hover{text-decoration:underline}
+section{padding:50px 20px;max-width:1100px;margin:auto}
+.hero{background:#fff3cd;border-radius:12px;padding:40px;text-align:center;box-shadow:0 5px 10px rgba(0,0,0,0.08)}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px;margin-top:30px}
+.card{background:white;border-radius:12px;padding:25px;box-shadow:0 4px 10px rgba(0,0,0,0.1);text-align:center}
+.card h3{color:#ff7a18}
+
+/* Animated gallery */
+.slider{position:relative;overflow:hidden;border-radius:12px}
+.slides{display:flex;width:400%;animation:slide 16s infinite}
+.slides img{width:100%;height:320px;object-fit:cover}
+@keyframes slide{
+0%{margin-left:0}
+25%{margin-left:0}
+30%{margin-left:-100%}
+50%{margin-left:-100%}
+55%{margin-left:-200%}
+75%{margin-left:-200%}
+80%{margin-left:-300%}
+100%{margin-left:-300%}
+}
+
+.teacher-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px}
+.teacher{background:white;padding:20px;border-radius:10px;box-shadow:0 3px 8px rgba(0,0,0,0.1);text-align:center}
+.fees{background:#f1f5ff;border-radius:12px;padding:30px}
+.contact{background:#f1f5ff;border-radius:12px;padding:30px;text-align:center}
+
+form input,form textarea{width:100%;padding:10px;margin:8px 0;border-radius:6px;border:1px solid #ccc}
+form button{background:#ff7a18;color:white;padding:12px;border:none;border-radius:6px;font-weight:bold;cursor:pointer}
+form button:hover{background:#e66a00}
+
+.login-box{max-width:400px;margin:auto;background:white;padding:25px;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,0.1)}
+
+.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:14px 18px;border-radius:30px;text-decoration:none;font-weight:bold;box-shadow:0 4px 8px rgba(0,0,0,0.2)}
+
+.map{width:100%;height:300px;border:0;border-radius:10px}
+footer{background:#333;color:white;text-align:center;padding:18px;margin-top:40px}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">
+<svg viewBox="0 0 100 100">
+<circle cx="50" cy="50" r="45" fill="#ffd43b"/>
+<circle cx="35" cy="40" r="6" fill="#333"/>
+<circle cx="65" cy="40" r="6" fill="#333"/>
+<path d="M30 60 Q50 75 70 60" stroke="#333" stroke-width="4" fill="none"/>
+</svg>
+<div>
+<h1>Little Wonder Play School</h1>
+<p>Learning with Fun & Happiness</p>
+</div>
+</div>
+</header>
+
+<nav>
+<a href="#about">About</a>
+<a href="#programs">Programs</a>
+<a href="#teachers">Teachers</a>
+<a href="#gallery">Gallery</a>
+<a href="#fees">Fees</a>
+<a href="#admission">Admission</a>
+<a href="#parents">Parent Login</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+<h2>Welcome to Little Wonder Play School</h2>
+<p>A joyful learning environment where children explore, play, and grow with creativity and confidence.</p>
+<p><b>Location:</b> Atawla (Panipat)</p>
+</section>
+
+<section id="about">
+<h2>About Our School</h2>
+<p>Little Wonder Play School provides a safe, caring, and stimulating environment for early childhood development. Our play-way teaching method helps children learn through activities, storytelling, music, art, and fun games.</p>
+</section>
+
+<section id="programs">
+<h2>Our Programs</h2>
+<div class="features">
+<div class="card">
+<h3>Playgroup</h3>
+<p>For children aged 2–3 years focusing on playful learning and social interaction.</p>
+</div>
+<div class="card">
+<h3>Nursery</h3>
+<p>Interactive learning with music, art, storytelling, and creative activities.</p>
+</div>
+<div class="card">
+<h3>Kindergarten</h3>
+<p>Building early academic skills, confidence, and social development.</p>
+</div>
+</div>
+</section>
+
+<section id="teachers">
+<h2>Our Teachers</h2>
+<div class="teacher-grid">
+<div class="teacher"><h3>Teacher Name</h3><p>Early Childhood Educator</p></div>
+<div class="teacher"><h3>Teacher Name</h3><p>Nursery Teacher</p></div>
+<div class="teacher"><h3>Teacher Name</h3><p>Kindergarten Teacher</p></div>
+</div>
+</section>
+
+<section id="gallery">
+<h2>Students Activity Gallery</h2>
+<div class="slider">
+<div class="slides">
+<img src="https://images.unsplash.com/photo-1588072432836-e10032774350" alt="kids learning">
+<img src="https://images.unsplash.com/photo-1509062522246-3755977927d7" alt="kids playing">
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="kids class">
+<img src="https://images.unsplash.com/photo-1604881991720-f91add269bed" alt="kids activity">
+</div>
+</div>
+</section>
+
+<section id="fees">
+<h2>Fee Structure</h2>
+<div class="fees">
+<p><b>Playgroup:</b> Contact School Office</p>
+<p><b>Nursery:</b> Contact School Office</p>
+<p><b>Kindergarten:</b> Contact School Office</p>
+</div>
+</section>
+
+<section id="admission">
+<h2>Online Admission Form</h2>
+<form>
+<input type="text" placeholder="Child Name" required>
+<input type="number" placeholder="Child Age" required>
+<input type="text" placeholder="Parent Name" required>
+<input type="tel" placeholder="Phone Number" required>
+<textarea placeholder="Address"></textarea>
+<button type="submit">Submit Admission Request</button>
+</form>
+</section>
+
+<section id="parents">
+<h2>Parent Login</h2>
+<div class="login-box">
+<form>
+<input type="text" placeholder="Parent Username">
+<input type="password" placeholder="Password">
+<button type="submit">Login</button>
+</form>
+<p style="font-size:14px;text-align:center;margin-top:10px">Parents can login to check updates, homework, and school notices.</p>
+</div>
+</section>
+
+<section id="contact">
+<div class="contact">
+<h2>Contact Us</h2>
+<p><b>School Name:</b> Little Wonder Play School</p>
+<p><b>Address:</b> Atawla, Panipat</p>
+<p><b>Phone:</b> 7082856174</p>
+
+<h3>School Location</h3>
+<iframe class="map" src="https://maps.google.com/maps?q=Panipat&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+</div>
+</section>
+
+<a class="whatsapp" href="https://wa.me/917082856174" target="_blank">Chat on WhatsApp</a>
+
+<footer>
+<p>© 2026 Little Wonder Play School | Atawla (Panipat)</p>
+</footer>
+
+</body>
+</html>
